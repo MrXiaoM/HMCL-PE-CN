@@ -1,4 +1,4 @@
-package com.tungsten.hmclpe;
+package com.tungsten.hmclpe.sweetrice;
 
 import org.junit.Test;
 

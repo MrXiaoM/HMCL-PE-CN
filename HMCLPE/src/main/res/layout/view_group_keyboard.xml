@@ -13,7 +13,7 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -32,7 +32,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -46,7 +46,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="290"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -60,7 +60,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="291"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -74,7 +74,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="292"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -93,7 +93,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5" />
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -107,7 +107,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="294"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -121,7 +121,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="295"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -135,7 +135,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="296"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -154,7 +154,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5" />
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -168,7 +168,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="298"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -182,7 +182,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="299"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -196,7 +196,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="300"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -215,7 +215,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5" />
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -229,7 +229,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="283"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -243,7 +243,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="281"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -280,7 +280,7 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -294,7 +294,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="96"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -308,7 +308,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="49"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -322,7 +322,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="50"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -336,7 +336,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="51"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -350,7 +350,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="52"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -364,7 +364,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="53"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -378,7 +378,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="54"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -392,7 +392,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="55"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -406,7 +406,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="56"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -420,7 +420,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="57"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -434,7 +434,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="48"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -448,7 +448,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="45"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -462,7 +462,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="61"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -481,7 +481,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5" />
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -495,7 +495,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="260"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -509,7 +509,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="268"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -528,7 +528,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -542,7 +542,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="282"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -556,7 +556,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="331"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -570,7 +570,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="332"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -592,7 +592,7 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -606,7 +606,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="258"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -620,7 +620,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="81"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -634,7 +634,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="87"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -648,7 +648,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="69"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -662,7 +662,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="82"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -676,7 +676,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="84"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -690,7 +690,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="89"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -704,7 +704,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="85"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -718,7 +718,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="73"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -732,7 +732,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="79"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -746,7 +746,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="80"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -760,7 +760,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="91"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -774,7 +774,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="93"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -793,7 +793,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -807,7 +807,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="261"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -821,7 +821,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="269"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -840,7 +840,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -854,7 +854,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="327"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -868,7 +868,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="328"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -882,7 +882,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="329"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -904,7 +904,7 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:id="@+id/virtual_keyboard_button_caps"
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
@@ -919,7 +919,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="280"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -933,7 +933,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="65"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -947,7 +947,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="83"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -961,7 +961,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="68"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -975,7 +975,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="70"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -989,7 +989,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="71"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1003,7 +1003,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="72"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1017,7 +1017,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="74"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1031,7 +1031,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="75"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1045,7 +1045,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="76"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1059,7 +1059,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="59"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1073,7 +1073,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="39"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1092,7 +1092,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1106,7 +1106,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="324"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1120,7 +1120,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="325"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1147,7 +1147,7 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:id="@+id/virtual_keyboard_button_lshift"
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
@@ -1162,7 +1162,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="340"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1176,7 +1176,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="90"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1190,7 +1190,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="88"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1204,7 +1204,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="67"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1218,7 +1218,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="86"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1232,7 +1232,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="66"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1246,7 +1246,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="78"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1260,7 +1260,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="77"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1274,7 +1274,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="44"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1288,7 +1288,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="46"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1302,7 +1302,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="47"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:id="@+id/virtual_keyboard_button_Rshift"
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
@@ -1322,7 +1322,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1.5"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1341,7 +1341,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1.5"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1355,7 +1355,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="321"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1369,7 +1369,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="322"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1383,7 +1383,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="323"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1405,7 +1405,7 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1419,7 +1419,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="341"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1433,7 +1433,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="343"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1447,7 +1447,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="342"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1461,7 +1461,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="32"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1475,7 +1475,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="346"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1489,7 +1489,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="347"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1503,7 +1503,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="348"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1522,7 +1522,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1536,7 +1536,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="263"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1550,7 +1550,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="264"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1569,7 +1569,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -1583,7 +1583,7 @@
             android:textAllCaps="false"
             hmclpe:keyCode="320"/>
 
-        <com.tungsten.hmclpe.control.view.KeyCodeView
+        <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
             android:background="@drawable/launcher_button_normal"
             android:layout_width="0dp"
             android:layout_height="match_parent"

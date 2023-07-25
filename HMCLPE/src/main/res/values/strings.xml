@@ -9,7 +9,7 @@
     <string name="launcher_spinner_text" translatable="false">▲</string>
     <string name="dialog_add_offline_account_uuid" translatable="false">UUID</string>
     <string name="default_game_file_directory_list_pri_path" translatable="false">/storage/emulated/0/HMCLPE/.minecraft</string>
-    <string name="default_game_file_directory_list_sec_path" translatable="false">/storage/emulated/0/Android/data/com.tungsten.hmclpe/files/.minecraft</string>
+    <string name="default_game_file_directory_list_sec_path" translatable="false">/storage/emulated/0/Android/data/com.tungsten.hmclpe.sweetrice/files/.minecraft</string>
     <string name="export_package_type_ui_multimc" translatable="false">MultiMC</string>
     <string name="install_game_ui_minecraft" translatable="false">Minecraft</string>
     <string name="install_game_ui_forge" translatable="false">Forge</string>

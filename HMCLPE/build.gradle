@@ -7,7 +7,7 @@ android {
         ignoreAssetsPattern '!.svn:!.git:<dir>_*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~'
     }
     defaultConfig {
-        applicationId "com.tungsten.hmclpe"
+        applicationId "com.tungsten.hmclpe.sweetrice"
         minSdk 26
         targetSdk 32
         versionCode 13

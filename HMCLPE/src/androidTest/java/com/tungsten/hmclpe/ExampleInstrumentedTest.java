@@ -1,4 +1,4 @@
-package com.tungsten.hmclpe;
+package com.tungsten.hmclpe.sweetrice;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the HMCLPE under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.tungsten.hmclpe", appContext.getPackageName());
+        assertEquals("com.tungsten.hmclpe.sweetrice", appContext.getPackageName());
     }
 }

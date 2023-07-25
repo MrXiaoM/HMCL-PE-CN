@@ -67,7 +67,7 @@
 
     </LinearLayout>
 
-    <com.tungsten.hmclpe.launcher.view.list.MaxHeightRecyclerView
+    <com.tungsten.hmclpe.sweetrice.launcher.view.list.MaxHeightRecyclerView
         android:id="@+id/download_task_list"
         android:visibility="gone"
         android:layout_width="match_parent"

@@ -60,7 +60,7 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="15dp">
 
-                <com.tungsten.hmclpe.control.view.KeyCodeView
+                <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
                     android:background="@drawable/launcher_button_normal"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
@@ -73,7 +73,7 @@
                     android:textAllCaps="false"
                     hmclpe:keyCode="0"/>
 
-                <com.tungsten.hmclpe.control.view.KeyCodeView
+                <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
                     android:layout_marginStart="5dp"
                     android:background="@drawable/launcher_button_normal"
                     android:layout_width="35dp"
@@ -87,7 +87,7 @@
                     android:textAllCaps="false"
                     hmclpe:keyCode="1"/>
 
-                <com.tungsten.hmclpe.control.view.KeyCodeView
+                <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
                     android:layout_marginStart="5dp"
                     android:background="@drawable/launcher_button_normal"
                     android:layout_width="35dp"
@@ -101,7 +101,7 @@
                     android:textAllCaps="false"
                     hmclpe:keyCode="2"/>
 
-                <com.tungsten.hmclpe.control.view.KeyCodeView
+                <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
                     android:layout_marginStart="5dp"
                     android:background="@drawable/launcher_button_normal"
                     android:layout_width="35dp"
@@ -115,7 +115,7 @@
                     android:textAllCaps="false"
                     hmclpe:keyCode="3"/>
 
-                <com.tungsten.hmclpe.control.view.KeyCodeView
+                <com.tungsten.hmclpe.sweetrice.control.view.KeyCodeView
                     android:layout_marginStart="5dp"
                     android:background="@drawable/launcher_button_normal"
                     android:layout_width="35dp"

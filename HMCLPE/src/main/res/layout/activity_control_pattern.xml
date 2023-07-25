@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.tungsten.hmclpe.control.view.LayoutPanel
+    <com.tungsten.hmclpe.sweetrice.control.view.LayoutPanel
         android:background="@color/colorTransparent"
         android:id="@+id/base_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.tungsten.hmclpe.control.view.TouchCharInput
+        <com.tungsten.hmclpe.sweetrice.control.view.TouchCharInput
             android:layout_width="1px"
             android:layout_height="1px"
             android:background="@android:color/transparent"
@@ -20,7 +20,7 @@
             android:inputType="textFilter|textImeMultiLine|textAutoComplete|textAutoCorrect"
             android:id="@+id/input_scanner"/>
 
-    </com.tungsten.hmclpe.control.view.LayoutPanel>
+    </com.tungsten.hmclpe.sweetrice.control.view.LayoutPanel>
 
     <RelativeLayout
         android:layout_marginTop="30dp"
