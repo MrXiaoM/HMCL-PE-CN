@@ -19,7 +19,11 @@ public class ButtonStyle implements Cloneable {
     public String fillColorPress;
 
     public ButtonStyle () {
-        this ("",13,"#f6f6f6",10,1.0f,"#1a000000","#00ffffff",13,"#f6f6f6",10,1.0f,"#1a000000","#40ffffff");
+        this(
+                "",
+                13,"#f6f6f6",10,1.0f,"#2aFFFFFF","#80000000",
+                13,"#f6f6f6",10,1.0f,"#2aFFFFFF","#BB000000"
+        );
     }
 
     public ButtonStyle (String name,int textSize,String textColor,int cornerRadius,float strokeWidth,String strokeColor,String fillColor,int textSizePress,String textColorPress,int cornerRadiusPress,float strokeWidthPress,String strokeColorPress,String fillColorPress) {

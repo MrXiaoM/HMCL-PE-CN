@@ -45,14 +45,14 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(path: ':FilePicker')
     implementation project(path: ':ZipTools')
-    implementation project(path: ':Hin2n')
-    implementation project(path: ':HiPer')
+    //implementation project(path: ':Hin2n')
+    //implementation project(path: ':HiPer')
     implementation project(path: ':Boat')
     implementation project(path: ':PojavLauncher')
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.github.naman14:app-theme-engine:0.5.2@aar'
     implementation 'com.google.android.material:material:1.6.1'
-    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
     implementation 'org.nanohttpd:nanohttpd:2.3.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'cat.ereza:customactivityoncrash:2.4.0'

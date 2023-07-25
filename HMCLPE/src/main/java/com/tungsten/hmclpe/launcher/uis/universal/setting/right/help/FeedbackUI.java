@@ -18,9 +18,6 @@ import com.tungsten.hmclpe.utils.animation.CustomAnimationUtils;
 public class FeedbackUI extends BaseUI implements View.OnClickListener {
 
     public LinearLayout feedbackUI;
-
-    private ImageButton joinDiscord;
-    private ImageButton joinQQChannel;
     private ImageButton joinQQ;
     private ImageButton jumpToGit;
 
@@ -33,13 +30,9 @@ public class FeedbackUI extends BaseUI implements View.OnClickListener {
         super.onCreate();
         feedbackUI = activity.findViewById(R.id.ui_feedback);
 
-        joinDiscord = activity.findViewById(R.id.join_discord);
-        joinQQChannel = activity.findViewById(R.id.join_qq_channel);
         joinQQ = activity.findViewById(R.id.join_qq_group);
         jumpToGit = activity.findViewById(R.id.jump_to_git_issues);
 
-        joinDiscord.setOnClickListener(this);
-        joinQQChannel.setOnClickListener(this);
         joinQQ.setOnClickListener(this);
         jumpToGit.setOnClickListener(this);
     }
@@ -65,9 +58,8 @@ public class FeedbackUI extends BaseUI implements View.OnClickListener {
     }
 
     /****************
-     *
-     * 发起添加群流程。群号：Boat澪|HMCLPE手机端交流�(965085729) 的 key 为： ZrtZkHED9ad1edu-TKYvVYz6iGzAa-nS
-     * 调用 joinQQGroup(ZrtZkHED9ad1edu-TKYvVYz6iGzAa-nS) 即可发起手Q客户端申请加群 Boat澪|HMCLPE手机端交流�(965085729)
+     * 发起添加群流程。群号：我的世界&amp;nbsp;甜米服&amp;nbsp;&amp;nbsp;玩家(594212444) 的 key 为： 6ILfS-5KyOyUpysswfioH1WTdrsNI_qp
+     * 调用 joinQQGroup(6ILfS-5KyOyUpysswfioH1WTdrsNI_qp) 即可发起手Q客户端申请加群 我的世界&amp;nbsp;甜米服&amp;nbsp;&amp;nbsp;玩家(594212444)
      *
      * @param key 由官网生成的key
      * @return 返回true表示呼起手Q成功，返回false表示呼起失败
@@ -85,8 +77,10 @@ public class FeedbackUI extends BaseUI implements View.OnClickListener {
         }
     }
 
+
     @Override
     public void onClick(View v) {
+        /*
         if (v == joinDiscord) {
             Uri uri = Uri.parse(HMCLPEApplication.properties.getProperty("discord"));
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
@@ -97,11 +91,12 @@ public class FeedbackUI extends BaseUI implements View.OnClickListener {
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             context.startActivity(intent);
         }
+        */
         if (v == joinQQ){
             joinQQGroup(context, HMCLPEApplication.properties.getProperty("qq-group-key"));
         }
         if (v == jumpToGit){
-            Uri uri = Uri.parse("https://github.com/root-S7/HMCL-PE-CN/issues");
+            Uri uri = Uri.parse("https://github.com/MrXiaoM/HMCL-PE-CN/issues");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             context.startActivity(intent);
         }

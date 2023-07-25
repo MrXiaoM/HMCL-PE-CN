@@ -34,7 +34,7 @@ public class LayoutPanel extends RelativeLayout {
     private String yText;
 
     private Bitmap background;
-
+    private float scaleImg;
     public LayoutPanel(Context context) {
         super(context);
     }
@@ -55,7 +55,8 @@ public class LayoutPanel extends RelativeLayout {
         xReference = new float[2];
         yReference = new float[2];
 
-        background = BitmapFactory.decodeResource(getContext().getResources(), R.drawable.ic_background);
+        background = BitmapFactory.decodeResource(getContext().getResources(), R.drawable.ic_background_loading);
+        scaleImg = (float)background.getWidth() / (float)background.getHeight();
     }
 
     @Override
@@ -63,8 +64,24 @@ public class LayoutPanel extends RelativeLayout {
     protected void onDraw(Canvas canvas) {
         if (showBackground){
             Rect src = new Rect(0, 0, background.getWidth(), background.getHeight());
-            Rect dst = new Rect(0, 0, getMeasuredWidth(), getMeasuredHeight());
+            int screenWidth = getMeasuredWidth();
+            int screenHeight = getMeasuredHeight();
+            int width = (int) (scaleImg * screenHeight);
+            int height = screenHeight;
+            if (width < screenWidth) {
+                width = screenWidth;
+                height = (int) (screenWidth / scaleImg);
+            }
+            if (height < screenHeight) {
+                width = (int) (scaleImg * screenHeight);
+                height = screenHeight;
+            }
+            float x = (screenWidth - width) / 2f;
+            float y = (screenHeight - height) / 2f;
+
+            Rect dst = new Rect((int)x, (int)y, width, height);
             canvas.drawBitmap(background, src, dst, new Paint(Paint.ANTI_ALIAS_FLAG));
+
         }
         if (showReference){
             path = new Path();

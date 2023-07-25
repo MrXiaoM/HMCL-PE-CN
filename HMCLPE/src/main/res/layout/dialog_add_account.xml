@@ -112,8 +112,27 @@
                         android:text="@string/dialog_add_offline_account_purchase"
                         android:layout_marginStart="7dp"
                         android:textSize="@dimen/text_size_middle"/>
-
                 </LinearLayout>
+
+                <TextView
+                        android:singleLine="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="没有正版账号就用离线登录!!!"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorRed"
+                        android:layout_marginStart="7dp"
+                        android:textSize="@dimen/text_size_middle"/>
+
+                <TextView
+                        android:singleLine="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第一次启动游戏需要下载大约 320MB 的资源文件，请保持网络通畅。"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorGray"
+                        android:layout_marginStart="7dp"
+                        android:textSize="@dimen/text_size_middle"/>
 
                 <LinearLayout
                     android:id="@+id/show_advance_setting"

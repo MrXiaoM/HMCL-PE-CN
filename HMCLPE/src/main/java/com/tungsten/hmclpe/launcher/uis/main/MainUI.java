@@ -47,7 +47,7 @@ public class MainUI extends BaseUI implements View.OnClickListener, AdapterView.
     private LinearLayout startGameManagerUI;
     private LinearLayout startVersionListUI;
     private LinearLayout startDownloadUI;
-    private LinearLayout startMultiPlayerUI;
+    //private LinearLayout startMultiPlayerUI;
     private LinearLayout startSettingUI;
 
     private LinearLayout startGame;
@@ -66,7 +66,7 @@ public class MainUI extends BaseUI implements View.OnClickListener, AdapterView.
 
     private ImageView versionListIcon;
     private ImageView downloadIcon;
-    private ImageView multiplayerIcon;
+    //private ImageView multiplayerIcon;
     private ImageView settingIcon;
 
     public MainUI(Context context, MainActivity activity) {
@@ -82,7 +82,7 @@ public class MainUI extends BaseUI implements View.OnClickListener, AdapterView.
         startGameManagerUI = activity.findViewById(R.id.start_ui_game_manager);
         startVersionListUI = activity.findViewById(R.id.start_ui_version_list);
         startDownloadUI = activity.findViewById(R.id.start_ui_download);
-        startMultiPlayerUI = activity.findViewById(R.id.start_ui_multi_player);
+        //startMultiPlayerUI = activity.findViewById(R.id.start_ui_multi_player);
         startSettingUI = activity.findViewById(R.id.start_ui_setting);
 
         startGame = activity.findViewById(R.id.launcher_play_button);
@@ -100,14 +100,14 @@ public class MainUI extends BaseUI implements View.OnClickListener, AdapterView.
         //icon
         versionListIcon = activity.findViewById(R.id.version_list_icon);
         downloadIcon = activity.findViewById(R.id.download_icon);
-        multiplayerIcon = activity.findViewById(R.id.multiplayer_icon);
+        //multiplayerIcon = activity.findViewById(R.id.multiplayer_icon);
         settingIcon = activity.findViewById(R.id.setting_icon);
 
         startAccountUI.setOnClickListener(this);
         startGameManagerUI.setOnClickListener(this);
         startVersionListUI.setOnClickListener(this);
         startDownloadUI.setOnClickListener(this);
-        startMultiPlayerUI.setOnClickListener(this);
+        //startMultiPlayerUI.setOnClickListener(this);
         startSettingUI.setOnClickListener(this);
 
         startGame.setOnClickListener(this);
@@ -239,9 +239,9 @@ public class MainUI extends BaseUI implements View.OnClickListener, AdapterView.
         if (v == startDownloadUI){
             activity.uiManager.switchMainUI(activity.uiManager.downloadUI);
         }
-        if (v == startMultiPlayerUI){
-            activity.uiManager.switchMainUI(activity.uiManager.multiPlayerUI);
-        }
+        //if (v == startMultiPlayerUI){
+        //    activity.uiManager.switchMainUI(activity.uiManager.multiPlayerUI);
+        //}
         if (v == startSettingUI){
             activity.uiManager.switchMainUI(activity.uiManager.settingUI);
         }
@@ -298,9 +298,9 @@ public class MainUI extends BaseUI implements View.OnClickListener, AdapterView.
         }
         changeIcon(versionListIcon, themePath, "versionListIcon");
         changeIcon(downloadIcon, themePath, "downloadIcon");
-        changeIcon(multiplayerIcon, themePath, "multiplayerIcon");
+        //changeIcon(multiplayerIcon, themePath, "multiplayerIcon");
         changeIcon(settingIcon, themePath, "settingIcon");
-        changeIcon(activity.launcherLayout, themePath, "background");
+        changeIcon(activity.launcherBackground, themePath, "background");
         changeIcon(versionIcon, themePath, "versionIcon");
         if (new File(themePath,"color.json").exists()) {
             try {
@@ -320,8 +320,15 @@ public class MainUI extends BaseUI implements View.OnClickListener, AdapterView.
         File path = new File(themePath, iconName + ".png");
         if (path.exists()) {
             Bitmap bitmap = BitmapFactory.decodeFile(path.getAbsolutePath());
-            view.post(()->{view.setBackground(new BitmapDrawable(activity.getResources(), bitmap));});
-
+            if (view instanceof ImageView) {
+                view.post(() -> {
+                    ((ImageView)view).setImageBitmap(bitmap);
+                });
+            } else {
+                view.post(() -> {
+                    view.setBackground(new BitmapDrawable(activity.getResources(), bitmap));
+                });
+            }
         }
     }
 }

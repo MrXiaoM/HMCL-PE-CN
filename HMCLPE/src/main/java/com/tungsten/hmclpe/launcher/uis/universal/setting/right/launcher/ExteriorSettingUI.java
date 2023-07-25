@@ -94,14 +94,14 @@ public class ExteriorSettingUI extends BaseUI implements View.OnClickListener, C
             editBgPath.setEnabled(false);
             editBgUrl.setEnabled(false);
             selectBgPath.setEnabled(false);
-            activity.launcherLayout.setBackground(context.getDrawable(R.drawable.ic_background));
+            activity.launcherBackground.setImageDrawable(context.getDrawable(R.drawable.ic_background));
         }
         else if (activity.launcherSetting.launcherBackground.type == 1){
             classicRadio.setChecked(true);
             editBgPath.setEnabled(false);
             editBgUrl.setEnabled(false);
             selectBgPath.setEnabled(false);
-            activity.launcherLayout.setBackground(context.getDrawable(R.drawable.ic_background_classic));
+            activity.launcherBackground.setImageDrawable(context.getDrawable(R.drawable.ic_background_classic));
         }
         else if (activity.launcherSetting.launcherBackground.type == 2){
             customRadio.setChecked(true);
@@ -110,10 +110,10 @@ public class ExteriorSettingUI extends BaseUI implements View.OnClickListener, C
             selectBgPath.setEnabled(true);
             if (new File(activity.launcherSetting.launcherBackground.path).exists() && isImageFile(activity.launcherSetting.launcherBackground.path)){
                 Bitmap bitmap = BitmapFactory.decodeFile(activity.launcherSetting.launcherBackground.path);
-                activity.launcherLayout.setBackground(new BitmapDrawable(bitmap));
+                activity.launcherBackground.setImageDrawable(new BitmapDrawable(bitmap));
             }
             else {
-                activity.launcherLayout.setBackground(context.getDrawable(R.drawable.ic_background));
+                activity.launcherBackground.setImageDrawable(context.getDrawable(R.drawable.ic_background));
             }
         }
         else{
@@ -129,9 +129,9 @@ public class ExteriorSettingUI extends BaseUI implements View.OnClickListener, C
                     httpURLConnection.connect();
                     InputStream inputStream = httpURLConnection.getInputStream();
                     Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
-                    handler.post(() -> activity.launcherLayout.setBackground(new BitmapDrawable(bitmap)));
+                    handler.post(() -> activity.launcherBackground.setImageDrawable(new BitmapDrawable(bitmap)));
                 } catch (IOException e) {
-                    handler.post(() -> activity.launcherLayout.setBackground(context.getDrawable(R.drawable.ic_background)));
+                    handler.post(() -> activity.launcherBackground.setImageDrawable(context.getDrawable(R.drawable.ic_background)));
                     e.printStackTrace();
                 }
             }).start();
@@ -165,10 +165,10 @@ public class ExteriorSettingUI extends BaseUI implements View.OnClickListener, C
                 GsonUtils.saveLauncherSetting(activity.launcherSetting,AppManifest.SETTING_DIR + "/launcher_setting.json");
                 if (new File(editBgPath.getText().toString()).exists() && isImageFile(editBgPath.getText().toString())){
                     Bitmap bitmap = BitmapFactory.decodeFile(editBgPath.getText().toString());
-                    activity.launcherLayout.setBackground(new BitmapDrawable(bitmap));
+                    activity.launcherBackground.setImageDrawable(new BitmapDrawable(bitmap));
                 }
                 else {
-                    activity.launcherLayout.setBackground(context.getDrawable(R.drawable.ic_background));
+                    activity.launcherBackground.setImageDrawable(context.getDrawable(R.drawable.ic_background));
                 }
             }
         });
@@ -195,9 +195,9 @@ public class ExteriorSettingUI extends BaseUI implements View.OnClickListener, C
                         httpURLConnection.connect();
                         InputStream inputStream = httpURLConnection.getInputStream();
                         Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
-                        handler.post(() -> activity.launcherLayout.setBackground(new BitmapDrawable(bitmap)));
+                        handler.post(() -> activity.launcherBackground.setImageDrawable(new BitmapDrawable(bitmap)));
                     } catch (IOException e) {
-                        handler.post(() -> activity.launcherLayout.setBackground(context.getDrawable(R.drawable.ic_background)));
+                        handler.post(() -> activity.launcherBackground.setImageDrawable(context.getDrawable(R.drawable.ic_background)));
                         e.printStackTrace();
                     }
                 }).start();
@@ -347,7 +347,7 @@ public class ExteriorSettingUI extends BaseUI implements View.OnClickListener, C
             editBgUrl.setEnabled(false);
             selectBgPath.setEnabled(false);
             activity.launcherSetting.launcherBackground.type = 0;
-            activity.launcherLayout.setBackground(context.getDrawable(R.drawable.ic_background));
+            activity.launcherBackground.setImageDrawable(context.getDrawable(R.drawable.ic_background));
         }
         if (buttonView == classicRadio && isChecked){
             defaultRadio.setChecked(false);
@@ -357,7 +357,7 @@ public class ExteriorSettingUI extends BaseUI implements View.OnClickListener, C
             editBgUrl.setEnabled(false);
             selectBgPath.setEnabled(false);
             activity.launcherSetting.launcherBackground.type = 1;
-            activity.launcherLayout.setBackground(context.getDrawable(R.drawable.ic_background_classic));
+            activity.launcherBackground.setImageDrawable(context.getDrawable(R.drawable.ic_background_classic));
         }
         if (buttonView == customRadio && isChecked){
             defaultRadio.setChecked(false);
@@ -370,10 +370,10 @@ public class ExteriorSettingUI extends BaseUI implements View.OnClickListener, C
             activity.launcherSetting.launcherBackground.path = editBgPath.getText().toString();
             if (new File(editBgPath.getText().toString()).exists() && isImageFile(editBgPath.getText().toString())){
                 Bitmap bitmap = BitmapFactory.decodeFile(editBgPath.getText().toString());
-                activity.launcherLayout.setBackground(new BitmapDrawable(bitmap));
+                activity.launcherBackground.setImageDrawable(new BitmapDrawable(bitmap));
             }
             else {
-                activity.launcherLayout.setBackground(context.getDrawable(R.drawable.ic_background));
+                activity.launcherBackground.setImageDrawable(context.getDrawable(R.drawable.ic_background));
             }
         }
         if (buttonView == onlineRadio && isChecked){
@@ -393,9 +393,9 @@ public class ExteriorSettingUI extends BaseUI implements View.OnClickListener, C
                     httpURLConnection.connect();
                     InputStream inputStream = httpURLConnection.getInputStream();
                     Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
-                    handler.post(() -> activity.launcherLayout.setBackground(new BitmapDrawable(bitmap)));
+                    handler.post(() -> activity.launcherBackground.setImageDrawable(new BitmapDrawable(bitmap)));
                 } catch (IOException e) {
-                    handler.post(() -> activity.launcherLayout.setBackground(context.getDrawable(R.drawable.ic_background)));
+                    handler.post(() -> activity.launcherBackground.setImageDrawable(context.getDrawable(R.drawable.ic_background)));
                     e.printStackTrace();
                 }
             }).start();

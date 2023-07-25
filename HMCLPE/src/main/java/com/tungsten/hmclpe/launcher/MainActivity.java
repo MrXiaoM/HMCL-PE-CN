@@ -36,13 +36,13 @@ import com.tungsten.hmclpe.utils.PropertiesFileParse;
 import com.tungsten.hmclpe.utils.animation.CustomAnimationUtils;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    public LinearLayout launcherLayout;
+    public ImageView launcherBackground;
     public boolean isLoaded = false;
     public boolean dialogMode = false;
     public LauncherSetting launcherSetting;
     public PublicGameSetting publicGameSetting;
     public PrivateGameSetting privateGameSetting;
-    public UpdateChecker updateChecker;
+    //public UpdateChecker updateChecker;
     public Toolbar appBar;
     public LinearLayout appBarTitle;
     public ImageButton backToLastUI;
@@ -63,9 +63,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         HMCLPEApplication.properties = new PropertiesFileParse("config.properties", getApplicationContext()).getProperties();
         HMCLPEApplication.appOtherConfig = getSharedPreferences("config", Context.MODE_PRIVATE);
         setContentView(R.layout.activity_main);
-        launcherLayout = findViewById(R.id.launcher_layout);
+        launcherBackground = findViewById(R.id.launcher_background);
         init();
-        showEula();
+        //showEula();
     }
 
     public void init(){
@@ -83,9 +83,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             publicGameSetting = InitializeSetting.initializePublicGameSetting(MainActivity.this,MainActivity.this);
             privateGameSetting = InitializeSetting.initializePrivateGameSetting(MainActivity.this);
 
-            runOnUiThread(() -> {
-                updateChecker = new UpdateChecker(MainActivity.this,MainActivity.this);
-            });
+            //runOnUiThread(() -> {
+            //    updateChecker = new UpdateChecker(MainActivity.this,MainActivity.this);
+            //});
 
             DownloadUrlSource.getBalancedSource(MainActivity.this);
 

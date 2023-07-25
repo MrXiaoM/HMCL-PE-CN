@@ -4,7 +4,6 @@ import android.app.Application;
 import android.content.*;
 import com.tungsten.hmclpe.utils.PropertiesFileParse;
 import java.util.Properties;
-import wang.switchy.hin2n.Hin2n;
 
 public class HMCLPEApplication extends Application {
     private static Context context;
@@ -24,7 +23,6 @@ public class HMCLPEApplication extends Application {
         properties = new PropertiesFileParse("config.properties", getApplicationContext()).getProperties();
         appOtherConfig = getSharedPreferences("config", Context.MODE_PRIVATE);
         context = this.getApplicationContext();
-        Hin2n.getInstance().setup(context);
     }
     public static Context getContext(){
         return context;

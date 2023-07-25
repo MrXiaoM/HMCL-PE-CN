@@ -79,9 +79,7 @@ public class UniversalGameSettingUI extends BaseUI implements View.OnClickListen
 
     private RadioButton checkJavaAuto;
     private RadioButton checkJava8;
-    private RadioButton checkJava17;
     private TextView java8Path;
-    private TextView java17Path;
 
     private RadioButton checkGameDirDefault;
     private RadioButton checkGameDirIsolate;
@@ -164,11 +162,8 @@ public class UniversalGameSettingUI extends BaseUI implements View.OnClickListen
 
         checkJavaAuto = activity.findViewById(R.id.check_java_path_auto);
         checkJava8 = activity.findViewById(R.id.check_java_path_8);
-        checkJava17 = activity.findViewById(R.id.check_java_path_17);
         java8Path = activity.findViewById(R.id.java_8_path);
-        java17Path = activity.findViewById(R.id.java_17_path);
         java8Path.setText(AppManifest.JAVA_DIR + "/default");
-        java17Path.setText(AppManifest.JAVA_DIR + "/JRE17");
 
         checkGameDirDefault = activity.findViewById(R.id.check_default_game_dir);
         checkGameDirIsolate = activity.findViewById(R.id.check_isolate_game_dir);
@@ -273,7 +268,6 @@ public class UniversalGameSettingUI extends BaseUI implements View.OnClickListen
 
         checkJavaAuto.setOnClickListener(this);
         checkJava8.setOnClickListener(this);
-        checkJava17.setOnClickListener(this);
 
         checkGameDirDefault.setOnClickListener(this);
         checkGameDirIsolate.setOnClickListener(this);
@@ -496,20 +490,12 @@ public class UniversalGameSettingUI extends BaseUI implements View.OnClickListen
             javaPathText.setText(context.getString(R.string.game_setting_ui_java_path_auto));
             checkJavaAuto.setChecked(true);
             checkJava8.setChecked(false);
-            checkJava17.setChecked(false);
         }
         else {
             if (activity.privateGameSetting.javaSetting.name.equals("default")){
                 javaPathText.setText(AppManifest.JAVA_DIR + "/default");
                 checkJavaAuto.setChecked(false);
                 checkJava8.setChecked(true);
-                checkJava17.setChecked(false);
-            }
-            if (activity.privateGameSetting.javaSetting.name.equals("JRE17")){
-                javaPathText.setText(AppManifest.JAVA_DIR + "/JRE17");
-                checkJavaAuto.setChecked(false);
-                checkJava8.setChecked(false);
-                checkJava17.setChecked(true);
             }
         }
         if (activity.privateGameSetting.gameDirSetting.type == 0){
@@ -602,24 +588,14 @@ public class UniversalGameSettingUI extends BaseUI implements View.OnClickListen
         if (v == checkJavaAuto){
             javaPathText.setText(context.getString(R.string.game_setting_ui_java_path_auto));
             checkJava8.setChecked(false);
-            checkJava17.setChecked(false);
             activity.privateGameSetting.javaSetting.autoSelect = true;
             GsonUtils.savePrivateGameSetting(activity.privateGameSetting, AppManifest.SETTING_DIR + "/private_game_setting.json");
         }
         if (v == checkJava8){
             javaPathText.setText(AppManifest.JAVA_DIR + "/default");
             checkJavaAuto.setChecked(false);
-            checkJava17.setChecked(false);
             activity.privateGameSetting.javaSetting.autoSelect = false;
             activity.privateGameSetting.javaSetting.name = "default";
-            GsonUtils.savePrivateGameSetting(activity.privateGameSetting, AppManifest.SETTING_DIR + "/private_game_setting.json");
-        }
-        if (v == checkJava17){
-            javaPathText.setText(AppManifest.JAVA_DIR + "/JRE17");
-            checkJavaAuto.setChecked(false);
-            checkJava8.setChecked(false);
-            activity.privateGameSetting.javaSetting.autoSelect = false;
-            activity.privateGameSetting.javaSetting.name = "JRE17";
             GsonUtils.savePrivateGameSetting(activity.privateGameSetting, AppManifest.SETTING_DIR + "/private_game_setting.json");
         }
         if (v == checkGameDirDefault){

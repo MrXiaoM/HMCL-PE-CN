@@ -21,6 +21,7 @@ import com.tungsten.hmclpe.launcher.list.install.DownloadTaskListBean;
 import com.tungsten.hmclpe.launcher.setting.game.PrivateGameSetting;
 import com.tungsten.hmclpe.launcher.uis.game.download.DownloadUrlSource;
 import com.tungsten.hmclpe.task.DownloadTask;
+import com.tungsten.hmclpe.update.ResourcePackUpdater;
 import com.tungsten.hmclpe.utils.file.FileStringUtils;
 import com.tungsten.hmclpe.utils.file.FileUtils;
 import com.tungsten.hmclpe.utils.gson.GsonUtils;
@@ -79,6 +80,13 @@ public class CheckLibTask extends AsyncTask<RecyclerView,Integer,Exception> {
         Version version = gson.fromJson(versionJson, Version.class);
         String assetIndexString;
         ArrayList<DownloadTaskListBean> list = new ArrayList<>();
+        // 检查资源包更新
+        if (ResourcePackUpdater.check(new File(activity.launcherSetting.gameFileDirectory))) {
+            list.add(new DownloadTaskListBean("服务器材质包.zip",
+                    ResourcePackUpdater.downloadLink(),
+                    activity.launcherSetting.gameFileDirectory + "/resourcepacks/服务器材质包.zip",
+                    null));
+        }
         if (isRightFile(activity.launcherSetting.gameFileDirectory + "/assets/indexes/" + version.getAssetIndex().id + ".json",version.getAssetIndex().getSha1())) {
             assetIndexString = FileStringUtils.getStringFromFile(activity.launcherSetting.gameFileDirectory + "/assets/indexes/" + version.getAssetIndex().id + ".json");
         }
@@ -135,8 +143,7 @@ public class CheckLibTask extends AsyncTask<RecyclerView,Integer,Exception> {
                     0, TimeUnit.SECONDS,
                     workQueue,
                     new ThreadPoolExecutor.DiscardPolicy());
-            for (int j = 0; j < list.size(); j++) {
-                DownloadTaskListBean bean = list.get(j);
+            for (DownloadTaskListBean bean : list) {
                 String url = bean.url;
                 String path = bean.path;
                 String sha1 = bean.sha1;
@@ -170,8 +177,7 @@ public class CheckLibTask extends AsyncTask<RecyclerView,Integer,Exception> {
                                 downloadTaskListAdapter.onComplete(bean);
                             });
                             break;
-                        }
-                        else {
+                        } else {
                             if (i == tryTimes - 1) {
                                 failedFile.add(bean);
                             }

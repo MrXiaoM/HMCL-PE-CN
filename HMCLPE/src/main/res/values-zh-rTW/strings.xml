@@ -723,7 +723,7 @@
     <string name="download_setting_ui_download_num">並發數</string>
     <string name="download_setting_ui_download_alert">提示</string>
     <string name="download_setting_ui_download_alert_text">並發數過大可能導致系統卡頓。你的下載速度會受到寬帶運營商、服務器等方面的影響，調大下載並發數不一定能大幅提升總下載速度。</string>
-    <string name="feedback_ui_join_qq">加入非官方 QQ 群(不推薦)</string>
+    <string name="feedback_ui_join_qq">加入甜米伺服器玩家群</string>
     <string name="feedback_ui_github_issues">前往 Github 反饋</string>
     <string name="donate_ui_text">Hello Minecraft! Launcher Pocket Edition 是一個免費、自由、開放源代碼的 Minecraft 啟動器。您的讚助將幫助 Hello Minecraft! Launcher Pocket Edition 獲得更好的發展，還可以獲得 HMCL-PE 的開發進展。點擊此處查閱更多詳細信息。</string>
     <string name="dialog_manage_controller_title">管理觸控佈局方案</string>
@@ -978,6 +978,7 @@
     <string name="dialog_delete_button_title">提示</string>
     <string name="dialog_delete_button_content">確定要刪除該按鍵嗎？</string>
     <string name="dialog_delete_button_positive">刪除</string>
+    <string name="ui_about_mrxiaom_sub">Bilibili ID：@人间工作</string>
     <string name="ui_about_tungsten_sub">Bilibili ID：@念小六</string>
     <string name="ui_about_shirosakimio_sub">Bilibili ID：@ShirosakiMio</string>
     <string name="ui_help_doc">Hello Minecraft! Launcher 幫助文檔</string>

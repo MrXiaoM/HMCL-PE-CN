@@ -720,7 +720,7 @@
     <string name="download_setting_ui_download_num">Threads</string>
     <string name="download_setting_ui_download_alert">Information</string>
     <string name="download_setting_ui_download_alert_text">Too many threads may cause your system to freeze, and your download speed may be affected by your ISP and download servers. It is not always the case that more threads increase your download speed.</string>
-    <string name="feedback_ui_join_qq">Join Unofficial QQ Group</string>
+    <string name="feedback_ui_join_qq">Join SweetRice QQ Group</string>
     <string name="feedback_ui_github_issues">Go to Github</string>
     <string name="donate_ui_text">Hello Minecraft! Launcher Pocket Edition is an Android Minecraft launcher which allows users to manage multiple Minecraft instances easily. You can donate to us on Afdian to support our file hosting and project development. Click here for more information.</string>
     <string name="dialog_manage_controller_title">Manage Touch Layout Pattern</string>
@@ -870,6 +870,7 @@
     <string name="ui_help_doc">Hello Minecraft! Launcher Documentation</string>
     <string name="ui_help_doc_sub">Various guides are available.</string>
     <string name="doc_list_load_fail">Unable to fetch documentation list. Please click here to retry.</string>
+    <string name="ui_about_mrxiaom_sub">\@人间工作 on Bilibili</string>
     <string name="ui_about_tungsten_sub">\@念小六 on Bilibili</string>
     <string name="ui_about_shirosakimio_sub">\@ShirosakiMio on Bilibili</string>
     <string name="dialog_contributor_list_title">Contributor list</string>

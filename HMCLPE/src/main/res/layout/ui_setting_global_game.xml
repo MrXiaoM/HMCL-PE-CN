@@ -238,40 +238,6 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="12dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="32dp"
-                        android:orientation="horizontal">
-
-                        <RadioButton
-                            android:singleLine="true"
-                            android:tag="tint_accent_color"
-                            android:layout_gravity="center"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/game_setting_ui_java_path_17"
-                            android:textSize="@dimen/text_size_middle"
-                            android:textColor="@color/colorPureBlack"
-                            android:id="@+id/check_java_path_17"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:layout_marginStart="20dp"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:singleLine="true"
-                            android:textSize="@dimen/text_size_small"
-                            android:id="@+id/java_17_path"/>
-
-                    </LinearLayout>
-
                 </LinearLayout>
 
                 <View

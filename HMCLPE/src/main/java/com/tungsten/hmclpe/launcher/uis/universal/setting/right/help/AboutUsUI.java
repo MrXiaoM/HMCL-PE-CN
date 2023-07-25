@@ -21,6 +21,7 @@ public class AboutUsUI extends BaseUI implements View.OnClickListener {
     public LinearLayout aboutUsUI;
 
     private ImageButton hmclpe;
+    private ImageButton mrxiaom;
     private ImageButton tungs;
     private ImageButton mio;
 
@@ -33,14 +34,11 @@ public class AboutUsUI extends BaseUI implements View.OnClickListener {
     private ImageButton mcbbs;
     private ImageButton mcmod;
 
-    private ImageButton discord;
-    private ImageButton qqChannel;
     private ImageButton qq;
 
     private ImageButton libHmcl;
     private ImageButton libBoat;
     private ImageButton libPojav;
-    private ImageButton libHin2n;
     private ImageButton libGson;
     private ImageButton libTheme;
     private ImageButton libOkhttp;
@@ -68,6 +66,7 @@ public class AboutUsUI extends BaseUI implements View.OnClickListener {
         aboutUsUI = activity.findViewById(R.id.ui_about);
 
         hmclpe = activity.findViewById(R.id.hmclpe_link);
+        mrxiaom = activity.findViewById(R.id.mrxiaom_link);
         tungs = activity.findViewById(R.id.tungs_link);
         mio = activity.findViewById(R.id.mio_link);
 
@@ -80,14 +79,11 @@ public class AboutUsUI extends BaseUI implements View.OnClickListener {
         mcbbs = activity.findViewById(R.id.mcbbs_link);
         mcmod = activity.findViewById(R.id.mcmod_link);
 
-        discord = activity.findViewById(R.id.discord_link);
-        qqChannel = activity.findViewById(R.id.qq_channel_link);
         qq = activity.findViewById(R.id.qq_link);
 
         libHmcl = activity.findViewById(R.id.lib_hmcl_link);
         libBoat = activity.findViewById(R.id.lib_boat_link);
         libPojav = activity.findViewById(R.id.lib_pojav_link);
-        libHin2n = activity.findViewById(R.id.lib_hin2n_link);
         libGson = activity.findViewById(R.id.lib_gson_link);
         libTheme = activity.findViewById(R.id.lib_theme_link);
         libOkhttp = activity.findViewById(R.id.lib_okhttp_link);
@@ -106,6 +102,7 @@ public class AboutUsUI extends BaseUI implements View.OnClickListener {
         openSource = activity.findViewById(R.id.open_source_link);
 
         hmclpe.setOnClickListener(this);
+        mrxiaom.setOnClickListener(this);
         tungs.setOnClickListener(this);
         mio.setOnClickListener(this);
 
@@ -118,14 +115,11 @@ public class AboutUsUI extends BaseUI implements View.OnClickListener {
         mcbbs.setOnClickListener(this);
         mcmod.setOnClickListener(this);
 
-        discord.setOnClickListener(this);
-        qqChannel.setOnClickListener(this);
         qq.setOnClickListener(this);
 
         libHmcl.setOnClickListener(this);
         libBoat.setOnClickListener(this);
         libPojav.setOnClickListener(this);
-        libHin2n.setOnClickListener(this);
         libGson.setOnClickListener(this);
         libTheme.setOnClickListener(this);
         libOkhttp.setOnClickListener(this);
@@ -169,7 +163,10 @@ public class AboutUsUI extends BaseUI implements View.OnClickListener {
         Uri uri = null;
 
         if (view == hmclpe) {
-            uri = Uri.parse("https://www.icraft.ren");
+            uri = Uri.parse("https://github.com/MrXiaoM/HMCL-PE-CN");
+        }
+        if (view == mrxiaom) {
+            uri = Uri.parse("https://space.bilibili.com/330771760");
         }
         if (view == tungs) {
             uri = Uri.parse("https://space.bilibili.com/18115101");
@@ -203,13 +200,14 @@ public class AboutUsUI extends BaseUI implements View.OnClickListener {
         if (view == mcmod) {
             uri = Uri.parse("https://www.mcmod.cn");
         }
-
+/*
         if (view == discord) {
             uri = Uri.parse(HMCLPEApplication.properties.getProperty("discord"));
         }
         if (view == qqChannel) {
             uri = Uri.parse(HMCLPEApplication.properties.getProperty("qq-discord"));
         }
+ */
         if (view == qq) {
             FeedbackUI.joinQQGroup(context, HMCLPEApplication.properties.getProperty("qq-group-key"));
         }
@@ -221,9 +219,6 @@ public class AboutUsUI extends BaseUI implements View.OnClickListener {
         }
         if (view == libPojav) {
             uri = Uri.parse("https://github.com/PojavLauncherTeam/PojavLauncher");
-        }
-        if (view == libHin2n) {
-            uri = Uri.parse("https://github.com/switch-iot/hin2n");
         }
         if (view == libGson) {
             uri = Uri.parse("https://github.com/google/gson");
@@ -269,7 +264,7 @@ public class AboutUsUI extends BaseUI implements View.OnClickListener {
             uri = Uri.parse("https://tungstend.github.io/pages/eula.html");
         }
         if (view == openSource) {
-            uri = Uri.parse("https://github.com/root-S7/HMCL-PE_Server-CN");
+            uri = Uri.parse("https://github.com/MrXiaoM/HMCL-PE-CN");
         }
 
         if (uri != null) {

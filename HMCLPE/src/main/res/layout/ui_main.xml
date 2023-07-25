@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/ui_main"
+              xmlns:tools="http://schemas.android.com/tools" android:id="@+id/ui_main"
     android:visibility="invisible"
     android:orientation="horizontal"
     android:layout_width="match_parent"
@@ -8,6 +8,8 @@
 
     <ScrollView
         android:background="@color/launcher_ui_background"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
         android:layout_width="200dp"
         android:layout_height="match_parent">
 
@@ -239,43 +241,6 @@
                 android:textSize="@dimen/text_size_small"
                 android:textColor="@color/colorPureBlack"/>
 
-            <View
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:background="@color/colorPureBlack"/>
-
-            <LinearLayout
-                android:background="@drawable/launcher_button_parent"
-                android:focusable="true"
-                android:id="@+id/start_ui_multi_player"
-                android:clickable="true"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="10dp">
-
-                <ImageView
-                    android:id="@+id/multiplayer_icon"
-                    android:layout_gravity="center"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/ic_command"/>
-
-                <TextView
-                    android:singleLine="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:layout_marginStart="6dp"
-                    android:text="@string/launcher_scroll_multi_player"
-                    android:textSize="@dimen/text_size_middle"/>
-
-            </LinearLayout>
-
             <LinearLayout
                 android:background="@drawable/launcher_button_parent"
                 android:focusable="true"
@@ -320,34 +285,36 @@
             android:focusable="true"
             android:clickable="true"
             android:background="@drawable/launcher_button_blue"
-            android:layout_width="200dp"
-            android:layout_height="55dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginBottom="24dp"
+            android:layout_width="290dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="179dp"
+                android:layout_width="249dp"
                 android:layout_height="match_parent"
                 android:weightSum="2"
-                android:paddingTop="9dp"
-                android:paddingBottom="9dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:singleLine="true"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="0dp"
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/launcher_button_launch"
-                    android:textSize="14sp"
+                    android:textSize="32sp"
                     android:textColor="@color/colorPureWhite"/>
 
                 <TextView
-                    android:paddingLeft="7dp"
+                    android:paddingLeft="27dp"
                     android:paddingRight="7dp"
                     android:id="@+id/launch_version_text"
                     android:layout_weight="1"
@@ -356,7 +323,7 @@
                     android:layout_gravity="center"
                     android:singleLine="true"
                     android:text="@string/launcher_button_current_version"
-                    android:textSize="@dimen/text_size_small"
+                    android:textSize="20sp"
                     android:textColor="@color/colorPureWhite"/>
 
             </LinearLayout>
@@ -367,7 +334,7 @@
                 android:background="@color/colorGray"/>
 
             <RelativeLayout
-                android:layout_width="20dp"
+                android:layout_width="40dp"
                 android:layout_height="match_parent">
 
                 <TextView
@@ -376,10 +343,11 @@
                     android:gravity="center"
                     android:text="@string/launcher_spinner_text"
                     android:textColor="@color/colorPureWhite"
-                    android:textSize="8sp"/>
+                    android:textSize="@dimen/text_size_middle"/>
 
                 <androidx.appcompat.widget.AppCompatSpinner
                     android:overlapAnchor="false"
+                    android:alpha="0"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@color/colorTransparent"

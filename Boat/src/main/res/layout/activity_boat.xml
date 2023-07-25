@@ -13,6 +13,9 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="15dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:orientation="vertical">
@@ -20,16 +23,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Powered by Boat"
+            android:layout_gravity="right"
+            android:textColor="#FFFFFF"
+            android:text="Powered by Boat, HMCL-PE"
             android:textSize="10sp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="HMCL-PE"
-            android:textSize="10sp"/>
+            android:layout_gravity="right"
+            android:textColor="#FFFFFF"
+            android:text="SweetRice 服务器客户端"
+            android:textSize="13sp"/>
 
     </LinearLayout>
 

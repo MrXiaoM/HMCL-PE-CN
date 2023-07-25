@@ -47,27 +47,27 @@ public class UniversalSettingUI extends BaseUI implements View.OnClickListener, 
 
     public LinearLayout universalSettingUI;
 
-    private LinearLayout showUpdateSetting;
+    //private LinearLayout showUpdateSetting;
     private LinearLayout showCacheSetting;
-    private ImageView showUpdate;
+    //private ImageView showUpdate;
     private ImageView showCache;
-    private TextView updateStateText;
+    //private TextView updateStateText;
     private TextView cachePathText;
     private Spinner switchLang;
     private Button clearCache;
     private Button exportLog;
-    private LinearLayout updateSetting;
-    private RadioButton checkRelease;
-    private RadioButton checkBeta;
+    //private LinearLayout updateSetting;
+    //private RadioButton checkRelease;
+    //private RadioButton checkBeta;
     private LinearLayout cacheSetting;
     private RadioButton checkDefault;
     private RadioButton checkCustom;
     private EditText editCacheContent;
     private ImageButton selectCachePath;
 
-    private int updateSettingHeight;
+    //private int updateSettingHeight;
     private int cacheSettingHeight;
-
+/*
     private UpdateChecker.UpdateCallback updateCallback = new UpdateChecker.UpdateCallback() {
         @Override
         public void onCheck() {
@@ -85,7 +85,7 @@ public class UniversalSettingUI extends BaseUI implements View.OnClickListener, 
             }
         }
     };
-
+*/
     public UniversalSettingUI(Context context, MainActivity activity) {
         super(context, activity);
     }
@@ -95,9 +95,9 @@ public class UniversalSettingUI extends BaseUI implements View.OnClickListener, 
         super.onCreate();
         universalSettingUI = activity.findViewById(R.id.ui_setting_universal);
 
-        showUpdateSetting = activity.findViewById(R.id.show_update_setting);
-        updateStateText = activity.findViewById(R.id.update_state_text);
-        showUpdate = activity.findViewById(R.id.show_update);
+        //showUpdateSetting = activity.findViewById(R.id.show_update_setting);
+        //updateStateText = activity.findViewById(R.id.update_state_text);
+        //showUpdate = activity.findViewById(R.id.show_update);
         showCacheSetting = activity.findViewById(R.id.show_cache_setting);
         cachePathText = activity.findViewById(R.id.cache_content_text);
         showCache = activity.findViewById(R.id.show_cache);
@@ -105,17 +105,17 @@ public class UniversalSettingUI extends BaseUI implements View.OnClickListener, 
         switchLang = activity.findViewById(R.id.language_spinner);
         exportLog = activity.findViewById(R.id.export_log);
 
-        showUpdateSetting.setOnClickListener(this);
+        //showUpdateSetting.setOnClickListener(this);
         showCacheSetting.setOnClickListener(this);
         clearCache.setOnClickListener(this);
         exportLog.setOnClickListener(this);
 
-        updateSetting = activity.findViewById(R.id.update_setting);
-        checkRelease = activity.findViewById(R.id.update_to_rec);
-        checkBeta = activity.findViewById(R.id.update_to_beta);
+        //updateSetting = activity.findViewById(R.id.update_setting);
+        //checkRelease = activity.findViewById(R.id.update_to_rec);
+        //checkBeta = activity.findViewById(R.id.update_to_beta);
 
-        checkRelease.setOnCheckedChangeListener(this);
-        checkBeta.setOnCheckedChangeListener(this);
+        //checkRelease.setOnCheckedChangeListener(this);
+        //checkBeta.setOnCheckedChangeListener(this);
 
         cacheSetting = activity.findViewById(R.id.cache_setting);
         checkDefault = activity.findViewById(R.id.check_default_cache_path);
@@ -139,16 +139,16 @@ public class UniversalSettingUI extends BaseUI implements View.OnClickListener, 
         switchLang.setSelection(sharedPreferences.getInt("lang", 0));
         switchLang.setOnItemSelectedListener(this);
 
-        updateSetting.post(() -> {
-            updateSettingHeight = updateSetting.getHeight();
-            updateSetting.setVisibility(View.GONE);
-        });
+        //updateSetting.post(() -> {
+        //    updateSettingHeight = updateSetting.getHeight();
+        //    updateSetting.setVisibility(View.GONE);
+        //});
         cacheSetting.post(() -> {
             cacheSettingHeight = cacheSetting.getHeight();
             cacheSetting.setVisibility(View.GONE);
         });
 
-        activity.updateChecker.check(activity.launcherSetting.getBetaVersion,updateCallback);
+        //activity.updateChecker.check(activity.launcherSetting.getBetaVersion,updateCallback);
     }
 
     @SuppressLint("UseCompatLoadingForDrawables")
@@ -159,6 +159,7 @@ public class UniversalSettingUI extends BaseUI implements View.OnClickListener, 
         if (activity.isLoaded){
             activity.uiManager.settingUI.startUniversalSettingUI.setBackground(context.getResources().getDrawable(R.drawable.launcher_button_white));
         }
+        /*
         if (activity.launcherSetting.getBetaVersion){
             checkBeta.setChecked(true);
             checkRelease.setChecked(false);
@@ -167,6 +168,7 @@ public class UniversalSettingUI extends BaseUI implements View.OnClickListener, 
             checkBeta.setChecked(false);
             checkRelease.setChecked(true);
         }
+         */
         if (activity.launcherSetting.cachePath.equals(AppManifest.DEFAULT_CACHE_DIR)){
             checkDefault.setChecked(true);
         }
@@ -198,9 +200,9 @@ public class UniversalSettingUI extends BaseUI implements View.OnClickListener, 
 
     @Override
     public void onClick(View v) {
-        if (v == showUpdateSetting){
-            HiddenAnimationUtils.newInstance(context,updateSetting,showUpdate,updateSettingHeight).toggle();
-        }
+        //if (v == showUpdateSetting){
+        //    HiddenAnimationUtils.newInstance(context,updateSetting,showUpdate,updateSettingHeight).toggle();
+        //}
         if (v == showCacheSetting){
             HiddenAnimationUtils.newInstance(context,cacheSetting,showCache,cacheSettingHeight).toggle();
         }
@@ -232,12 +234,13 @@ public class UniversalSettingUI extends BaseUI implements View.OnClickListener, 
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        /*
         if (buttonView == checkRelease){
             if (isChecked){
                 checkBeta.setChecked(false);
                 activity.launcherSetting.getBetaVersion = false;
                 GsonUtils.saveLauncherSetting(activity.launcherSetting,AppManifest.SETTING_DIR + "/launcher_setting.json");
-                activity.updateChecker.check(false,updateCallback);
+                //activity.updateChecker.check(false,updateCallback);
             }
         }
         if (buttonView == checkBeta){
@@ -245,9 +248,10 @@ public class UniversalSettingUI extends BaseUI implements View.OnClickListener, 
                 checkRelease.setChecked(false);
                 activity.launcherSetting.getBetaVersion = true;
                 GsonUtils.saveLauncherSetting(activity.launcherSetting,AppManifest.SETTING_DIR + "/launcher_setting.json");
-                activity.updateChecker.check(true,updateCallback);
+                //activity.updateChecker.check(true,updateCallback);
             }
         }
+         */
         if (buttonView == checkDefault){
             if (isChecked){
                 checkCustom.setChecked(false);

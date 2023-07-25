@@ -7,13 +7,14 @@
         <shape>
 
             <corners
-                android:topLeftRadius="3.0dip"
-                android:topRightRadius="3.0dip"
-                android:bottomLeftRadius="3.0dip"
-                android:bottomRightRadius="3.0dip"/>
+                android:topLeftRadius="6.0dip"
+                android:topRightRadius="6.0dip"
+                android:bottomLeftRadius="6.0dip"
+                android:bottomRightRadius="6.0dip"/>
 
             <solid
-                android:color="@color/colorAccent" />
+                android:color="#BBB5708D"
+                 />
 
         </shape>
 

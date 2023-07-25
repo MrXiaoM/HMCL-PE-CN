@@ -1,10 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name" translatable="false">HMCL-PE</string>
-    <string name="app_full_name" translatable="false">Hello Minecraft! Launcher : Pocket Edition</string>
-    <string name="app_name_pri" translatable="false">Hello Minecraft! Launcher</string>
-    <string name="app_name_sec" translatable="false">Pocket Edition</string>
+    <string name="app_name" translatable="false">SweetRice 甜米</string>
+    <string name="app_full_name" translatable="false">SweetRice 甜米</string>
+    <string name="app_name_pri" translatable="false">SweetRice</string>
+    <string name="app_name_sec" translatable="false">甜米</string>
     <string name="version_name" translatable="false">v2.1.1</string>
-    <string name="app_bar_title" translatable="false">Hello Minecraft! Launcher Pocket Edition v2.1.1非官方版</string>
+    <string name="app_bar_title" translatable="false">SweetRiceMC</string>
 
     <string name="launcher_spinner_text" translatable="false">▲</string>
     <string name="dialog_add_offline_account_uuid" translatable="false">UUID</string>
@@ -39,6 +39,7 @@
     <string name="hiper_ui_about_base" translatable="false">Based on HiPer</string>
     <string name="ui_about_hmclpe_main" translatable="false">Hello Minecraft! Launcher : Pocket Edition</string>
     <string name="ui_about_hmclpe_sub" translatable="false">2.1.1</string>
+    <string name="ui_about_mrxiaom_main" translatable="false">MrXiaoM</string>
     <string name="ui_about_tungsten_main" translatable="false">Tungsten</string>
     <string name="ui_about_shirosakimio_main" translatable="false">ShirosakiMio</string>
     <string name="ui_about_cosine_main" translatable="false">CosineMath</string>
@@ -46,7 +47,7 @@
     <string name="ui_about_tsaltedfishking_main" translatable="false">TSaltedfishKing</string>
     <string name="ui_about_bangbang93_main" translatable="false">bangbang93</string>
     <string name="ui_about_community_discord" translatable="false">Discord</string>
-    <string name="ui_about_open_source_statement" translatable="false">GPL v3 (https://github.com/root-S7/HMCL-PE-CN)</string>
+    <string name="ui_about_open_source_statement" translatable="false">GPL v3 (https://github.com/MrXiaoM/HMCL-PE-CN)</string>
 
     <string name="ui_about_libs_hmcl" translatable="false">HMCL</string>
     <string name="ui_about_libs_hmcl_sec" translatable="false">Copyright (c) 2022 huangyuhui.</string>
@@ -824,7 +825,7 @@
     <string name="download_setting_ui_download_alert_text">Too many threads may cause your system to freeze, and your download speed may be affected by your ISP and download servers. It is not always the case that more threads increase your download speed.</string>
     <string name="feedback_ui_join_discord">Join Unofficial Discord</string>
     <string name="feedback_ui_join_qq_channel">Join Unofficial QQ Channel</string>
-    <string name="feedback_ui_join_qq">Join Unofficial QQ Group(Not recommended)</string>
+    <string name="feedback_ui_join_qq">Join SweetRice QQ Group</string>
     <string name="feedback_ui_github_issues">Go to Github</string>
     <string name="donate_ui_text">Hello Minecraft! Launcher Pocket Edition is an Android Minecraft launcher which allows users to manage multiple Minecraft instances easily. You can donate to us on Afdian to support our file hosting and project development. Click here for more information.</string>
     <string name="dialog_manage_controller_title">Manage Touch Layout Pattern</string>
@@ -974,6 +975,7 @@
     <string name="ui_help_doc">Hello Minecraft! Launcher Documentation</string>
     <string name="ui_help_doc_sub">Various guides are available.</string>
     <string name="doc_list_load_fail">Unable to fetch documentation list. Please click here to retry.</string>
+    <string name="ui_about_mrxiaom_sub">\@人间工作 on Bilibili</string>
     <string name="ui_about_tungsten_sub">\@念小六 on Bilibili</string>
     <string name="ui_about_shirosakimio_sub">\@ShirosakiMio on Bilibili</string>
     <string name="dialog_contributor_list_title">Contributor list</string>

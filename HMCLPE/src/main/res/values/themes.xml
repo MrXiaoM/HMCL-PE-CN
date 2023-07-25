@@ -29,4 +29,10 @@
         <item name="android:textColor">@color/colorPureBlack</item>
         <item name="android:textSize">11sp</item>
     </style>
+
+    <style name="Splash.ProgressBar.Horizontal" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/splash_progress</item>
+        <item name="minHeight">32dip</item>
+        <item name="maxHeight">32dip</item>
+    </style>
 </resources>

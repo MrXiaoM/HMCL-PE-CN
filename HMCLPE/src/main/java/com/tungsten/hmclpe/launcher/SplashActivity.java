@@ -18,10 +18,7 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
-import android.widget.ProgressBar;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.*;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -53,10 +50,8 @@ public class SplashActivity extends AppCompatActivity {
     public ProgressBar loadingProgress;
     public TextView loadingText;
     public TextView loadingProgressText;
-    public TextView titleTextFirst;
-    public TextView titleTextSecond;
-    public TextView titleTextThird;
-    public ConstraintLayout background;
+    public ImageView titleImage;
+    public ImageView background;
     public LauncherSetting launcherSetting;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -67,9 +62,7 @@ public class SplashActivity extends AppCompatActivity {
         loadingProgress = findViewById(R.id.loading_progress_bar);
         loadingText = findViewById(R.id.loading_text);
         loadingProgressText = findViewById(R.id.loading_progress_text);
-        titleTextFirst = findViewById(R.id.title_text_first);
-        titleTextSecond = findViewById(R.id.title_text_second);
-        titleTextThird = findViewById(R.id.title_text_third);
+        titleImage = findViewById(R.id.title_image);
         background = findViewById(R.id.background);
         initTheme();
         requestPermission();
@@ -92,39 +85,17 @@ public class SplashActivity extends AppCompatActivity {
             return;
         }
         changeIcon(background, themePath, "splashBackground");
-        if (new File(themePath, "text.json").exists()) {
-            try {
-                JSONObject jsonObject = new JSONObject(FileUtils.readText(new File(themePath, "text.json")));
-                String s1 = jsonObject.getString("titleTextFirst");
-                String s2 = jsonObject.getString("titleTextSecond");
-                String s3 = jsonObject.getString("titleTextThird");
-                String s5 = jsonObject.getString("textColor");
-                if (!s1.equals("")) {
-                    titleTextFirst.setText(s1);
-                }
-                if (!s2.equals("")) {
-                    titleTextSecond.setText(s2);
-                }
-                if (!s3.equals("")) {
-                    titleTextThird.setText(s3);
-                }
-                if (!s5.equals("")) {
-                    titleTextFirst.setTextColor(Color.parseColor(s5));
-                    titleTextSecond.setTextColor(Color.parseColor(s5));
-                    titleTextThird.setTextColor(Color.parseColor(s5));
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-                Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
-            }
-        }
     }
 
     private void changeIcon(View view, File themePath, String iconName) {
         File path = new File(themePath, iconName + ".png");
         if (path.exists()) {
             Bitmap bitmap = BitmapFactory.decodeFile(path.getAbsolutePath());
-            view.setBackground(new BitmapDrawable(getResources(), bitmap));
+            if (view instanceof ImageView) {
+                ((ImageView) view).setImageBitmap(bitmap);
+            } else {
+                view.setBackground(new BitmapDrawable(getResources(), bitmap));
+            }
         }
     }
 

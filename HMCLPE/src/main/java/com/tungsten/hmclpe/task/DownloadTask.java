@@ -168,7 +168,7 @@ public class DownloadTask extends AsyncTask<ArrayList<DownloadTaskListBean>, Int
             nameOutputFile.getParentFile().mkdirs();
         }
         else {
-            if (!isRightFile(nameOutput,sha1)) {
+            if (sha1 != null && !isRightFile(nameOutput,sha1)) {
                 nameOutputFile.delete();
             }
         }
@@ -204,7 +204,7 @@ public class DownloadTask extends AsyncTask<ArrayList<DownloadTaskListBean>, Int
             e.printStackTrace();
             return false;
         }
-        if (!isRightFile(nameOutput,sha1)) {
+        if (sha1 != null && !isRightFile(nameOutput,sha1)) {
             nameOutputFile.delete();
             return false;
         }
