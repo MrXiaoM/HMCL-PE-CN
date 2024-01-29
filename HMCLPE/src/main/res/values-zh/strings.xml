@@ -80,8 +80,8 @@
     <string name="launch_check_dialog_launch">等待游戏启动</string>
     <string name="launch_check_dialog_cancel">取消</string>
     <string name="launch_check_dialog_exception_error_java">错误的 Java 版本</string>
-    <string name="launch_check_dialog_exception_assets_failed">资源文件下载失败，请检查网络并重新安装该版本</string>
-    <string name="launch_check_dialog_exception_lib_failed">当前版本缺少必要文件，请检查网络并重新安装该版本</string>
+    <string name="launch_check_dialog_exception_assets_failed">资源文件下载失败，请检查网络并重新安装该版本，或到设置更换下载源后重试</string>
+    <string name="launch_check_dialog_exception_lib_failed">当前版本缺少必要文件，请检查网络并重新安装该版本，或到设置更换下载源后重试</string>
     <string name="launch_check_dialog_exception_no_account">请先添加一个用户</string>
     <string name="launch_check_dialog_exception_no_game">没有可启动的游戏，你可以点击左侧边栏内的下载按钮安装游戏</string>
 

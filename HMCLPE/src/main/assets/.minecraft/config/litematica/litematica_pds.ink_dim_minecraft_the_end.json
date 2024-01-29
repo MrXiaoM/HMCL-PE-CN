@@ -1,13 +1,13 @@
 {
   "selections": {
-    "mode": "NORMAL"
+    "mode": "SIMPLE"
   },
   "placements": {},
   "schematic_projects_manager": {},
   "operation_mode": "SCHEMATIC_PLACEMENT",
   "render_range": {
     "mode": "ALL",
-    "axis": "Y",
+    "axis": "y",
     "layer_single": 0,
     "layer_above": 0,
     "layer_below": 0,

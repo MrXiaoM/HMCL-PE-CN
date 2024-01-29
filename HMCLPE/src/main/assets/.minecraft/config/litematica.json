@@ -14,888 +14,279 @@
   "Generic": {
     "areaSelectionsPerWorld": true,
     "changeSelectedCornerOnMove": true,
+    "cloneAtOriginalPosition": false,
+    "commandDisableFeedback": true,
+    "commandFillNoChunkClamp": false,
+    "commandUseWorldEdit": false,
+    "customSchematicBaseDirectoryEnabled": false,
     "debugLogging": false,
     "easyPlaceFirst": true,
     "easyPlaceHoldEnabled": true,
     "easyPlaceMode": false,
     "easyPlaceSinglePlayerHandling": true,
-    "easyPlaceProtocolV3": true,
+    "easyPlaceProtocolVersion": "auto",
+    "easyPlaceVanillaReach": false,
     "executeRequireHoldingTool": true,
+    "fixChestMirror": true,
     "fixRailRotation": true,
     "generateLowercaseNames": false,
     "highlightBlockInInventory": false,
+    "itemUsePacketCheckBypass": true,
     "layerModeFollowsPlayer": false,
-    "loadEntireSchematics": false,
+    "pasteAlwaysUseFill": false,
+    "pasteIgnoreBlockEntitiesEntirely": false,
+    "pasteIgnoreBlockEntitiesFromFill": true,
+    "pasteIgnoreCommandLimitWithNbtRestore": true,
     "pasteIgnoreEntities": false,
     "pasteIgnoreInventories": false,
     "pasteNbtRestoreBehavior": "none",
     "pasteToMcFunctionFiles": false,
+    "pasteUseFillCommand": true,
+    "pickBlockAvoidDamageable": true,
+    "pickBlockAvoidTools": false,
     "pickBlockEnabled": true,
     "pickBlockShulkers": false,
+    "placementReplaceBehavior": "all",
     "placementRestriction": false,
+    "placementRestrictionWarn": "actionbar",
     "renderMaterialListInGuis": true,
     "renderThreadNoTimeout": true,
+    "signTextPaste": true,
     "toolItemEnabled": true,
+    "unhideSchematicVCS": false,
     "pasteReplaceBehavior": "none",
     "selectionCornersMode": "corners",
-    "pasteCommandInterval": 1,
-    "pasteCommandLimit": 64,
-    "pasteCommandNameSetblock": "setblock",
+    "commandFillMaxVolume": 32768,
+    "commandLimitPerTick": 64,
+    "commandNameClone": "clone",
+    "commandNameFill": "fill",
+    "commandNameSetblock": "setblock",
+    "commandNameSummon": "summon",
+    "commandTaskInterval": 1,
+    "customSchematicBaseDirectory": "D:\\SweetRice客户端\\新客户端1.19\\.minecraft\\versions\\SweetRice\\schematics",
+    "easyPlaceSwapInterval": 0,
     "pickBlockableSlots": "1,2,3,4,5",
-    "toolItem": "minecraft:blaze_rod"
+    "toolItem": "minecraft:debug_stick"
   },
   "Hotkeys": {
     "addSelectionBox": {
-      "keys": "M,A",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "M,A"
     },
     "cloneSelection": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "deleteSelectionBox": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "easyPlaceUseKey": {
-      "keys": "BUTTON_2",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "BUTTON_2"
     },
     "easyPlaceToggle": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "executeOperation": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "invertGhostBlockRenderState": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "invertOverlayRenderState": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "layerModeNext": {
-      "keys": "M,PAGE_UP",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "M,PAGE_UP"
     },
     "layerModePrevious": {
-      "keys": "M,PAGE_DOWN",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "M,PAGE_DOWN"
     },
     "layerNext": {
-      "keys": "PAGE_UP",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "PAGE_UP"
     },
     "layerPrevious": {
-      "keys": "PAGE_DOWN",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "PAGE_DOWN"
     },
     "layerSetHere": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "nudgeSelectionNegative": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "nudgeSelectionPositive": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "moveEntireSelection": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "openGuiAreaSettings": {
-      "keys": "KP_MULTIPLY",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "KP_MULTIPLY"
     },
     "openGuiLoadedSchematics": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "openGuiMainMenu": {
-      "keys": "M",
-      "settings": {
-        "activate_on": "RELEASE",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": true,
-        "cancel": true
-      }
+      "keys": "M"
     },
     "openGuiMaterialList": {
-      "keys": "M,L",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "M,L"
     },
     "openGuiPlacementSettings": {
-      "keys": "KP_SUBTRACT",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "KP_SUBTRACT"
     },
     "openGuiSchematicPlacements": {
-      "keys": "M,P",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "M,P"
     },
     "openGuiSchematicProjects": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "openGuiSchematicVerifier": {
-      "keys": "M,V",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "M,V"
     },
     "openGuiSelectionManager": {
-      "keys": "M,S",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "M,S"
     },
     "openGuiSettings": {
-      "keys": "M,C",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "M,C"
     },
     "operationModeChangeModifier": {
-      "keys": "LEFT_CONTROL",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": false,
-        "exclusive": false,
-        "cancel": false
-      }
+      "keys": "LEFT_CONTROL"
     },
     "pickBlockFirst": {
-      "keys": "BUTTON_3",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "BUTTON_3"
     },
     "pickBlockLast": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": false,
-        "exclusive": false,
-        "cancel": false
-      }
+      "keys": ""
     },
     "pickBlockToggle": {
-      "keys": "M,BUTTON_3",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "M,BUTTON_3"
     },
     "renderInfoOverlay": {
-      "keys": "I",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "I"
     },
     "renderOverlayThroughBlocks": {
-      "keys": "RIGHT_CONTROL",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "RIGHT_CONTROL"
     },
     "rerenderSchematic": {
-      "keys": "F3,M",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "F3,M"
     },
     "saveAreaAsInMemorySchematic": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "saveAreaAsSchematicToFile": {
-      "keys": "LEFT_CONTROL,LEFT_ALT,S",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "LEFT_CONTROL,LEFT_ALT,S"
     },
-    "schematicRebuildBreakPlaceAll": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": false,
-        "exclusive": false,
-        "cancel": false
-      }
+    "schematicEditBreakPlaceAll": {
+      "keys": ""
     },
-    "schematicRebuildBreakAllExcept": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": false,
-        "exclusive": false,
-        "cancel": false
-      }
+    "schematicEditBreakAllExcept": {
+      "keys": ""
     },
-    "schematicRebuildBreakPlaceDirection": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": false,
-        "exclusive": false,
-        "cancel": false
-      }
+    "schematicEditBreakPlaceDirection": {
+      "keys": ""
     },
-    "schematicRebuildReplaceAll": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": false,
-        "exclusive": false,
-        "cancel": false
-      }
+    "schematicEditReplaceAll": {
+      "keys": ""
     },
-    "schematicRebuildReplaceDirection": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": false,
-        "exclusive": false,
-        "cancel": false
-      }
+    "schematicEditReplaceBlock": {
+      "keys": ""
+    },
+    "schematicEditReplaceDirection": {
+      "keys": ""
     },
     "schematicVersionCycleModifier": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": false,
-        "exclusive": false,
-        "cancel": false
-      }
+      "keys": ""
     },
     "schematicVersionCycleNext": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "schematicVersionCyclePrevious": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "selectionGrabModifier": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": false,
-        "exclusive": false,
-        "cancel": false
-      }
+      "keys": ""
     },
     "selectionGrow": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "selectionGrowModifier": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": false,
-        "exclusive": false,
-        "cancel": false
-      }
+      "keys": ""
     },
     "selectionNudgeModifier": {
-      "keys": "LEFT_ALT",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": false,
-        "exclusive": false,
-        "cancel": false
-      }
+      "keys": "LEFT_ALT"
     },
     "selectionModeCycle": {
-      "keys": "LEFT_CONTROL,M",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "LEFT_CONTROL,M"
     },
     "selectionShrink": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "setAreaOrigin": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "setSelectionBoxPosition1": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "setSelectionBoxPosition2": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "toggleAllRendering": {
-      "keys": "M,R",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "M,R"
     },
     "toggleAreaSelectionBoxesRendering": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "toggleInfoOverlayRendering": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "toggleOverlayRendering": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "toggleOverlayOutlineRendering": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "toggleOverlaySideRendering": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "togglePlacementBoxesRendering": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "togglePlacementRestriction": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "toggleSchematicBlockRendering": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "toggleSchematicRendering": {
-      "keys": "M,G",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "M,G"
+    },
+    "toggleSignTextPaste": {
+      "keys": ""
     },
     "toggleTranslucentRendering": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "toggleVerifierOverlayRendering": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     },
     "toolEnabledToggle": {
-      "keys": "M,T",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "M,T"
     },
     "toolPlaceCorner1": {
-      "keys": "BUTTON_1",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "BUTTON_1"
     },
     "toolPlaceCorner2": {
-      "keys": "BUTTON_2",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "BUTTON_2"
     },
     "toolSelectElements": {
-      "keys": "BUTTON_3",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": "BUTTON_3"
     },
     "toolSelectModifierBlock1": {
-      "keys": "LEFT_ALT",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": false,
-        "exclusive": false,
-        "cancel": false
-      }
+      "keys": "LEFT_ALT"
     },
     "toolSelectModifierBlock2": {
-      "keys": "LEFT_SHIFT",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": true,
-        "order_sensitive": false,
-        "exclusive": false,
-        "cancel": false
-      }
+      "keys": "LEFT_SHIFT"
     },
     "unloadCurrentSchematic": {
-      "keys": "",
-      "settings": {
-        "activate_on": "PRESS",
-        "context": "INGAME",
-        "allow_empty": false,
-        "allow_extra_keys": false,
-        "order_sensitive": true,
-        "exclusive": false,
-        "cancel": true
-      }
+      "keys": ""
     }
   },
   "InfoOverlays": {

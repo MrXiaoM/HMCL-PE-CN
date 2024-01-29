@@ -32,6 +32,7 @@
       "replaymod.camera.classic",
       "replaymod.camera.vanilla"
     ],
+    "legacyMainMenuButton": false,
     "mainMenuButton": "DEFAULT",
     "mainMenuButton_valid_values": [
       "BIG",
@@ -52,7 +53,7 @@
     "frameTimeFromWorldTime": false
   },
   "simplepathing": {
-    "pathpreview": false,
+    "pathpreview": true,
     "autosync": true,
     "timelineLength": 1800,
     "interpolator": "replaymod.gui.editkeyframe.interpolator.catmullrom.name",

@@ -82,7 +82,7 @@ public class InstallLauncherFile {
          * 检查Java环境
         */
         checkJava8(activity, progressCallback);
-        //checkJava17(activity, progressCallback);
+        checkJava17(activity, progressCallback);
         /**
          * 删除原游戏数据并释放新游戏整合包资源过程：
          *     1."/data/data/com.tungsten.hmclpe.sweetrice/shared_prefs/config.xml"目录下这个文件中installAdditionalFiles字段值非“完成”
@@ -120,26 +120,30 @@ public class InstallLauncherFile {
 
     @SuppressLint("SetTextI18n")
     public static void checkJava8(SplashActivity activity, AssetsUtils.ProgressCallback callback){
+        String versionString = AssetsUtils.readAssetsTxt(activity, "app_runtime/java/default/version");
+        if (versionString == null) return;
         activity.runOnUiThread(() -> {
             activity.loadingText.setText(activity.getString(R.string.loading_hint_java_8));
         });
-        if (!new File(AppManifest.JAVA_DIR + "/default").exists() || !new File(AppManifest.JAVA_DIR + "/default/version").exists() || Integer.parseInt(Objects.requireNonNull(FileStringUtils.getStringFromFile(AppManifest.JAVA_DIR + "/default/version"))) < Integer.parseInt(Objects.requireNonNull(AssetsUtils.readAssetsTxt(activity, "app_runtime/java/default/version")))) {
+        if (!new File(AppManifest.JAVA_DIR + "/default").exists() || !new File(AppManifest.JAVA_DIR + "/default/version").exists() || Integer.parseInt(Objects.requireNonNull(FileStringUtils.getStringFromFile(AppManifest.JAVA_DIR + "/default/version"))) < Integer.parseInt(versionString)) {
             FileUtils.deleteDirectory(AppManifest.JAVA_DIR + "/default");
             AssetsUtils.getInstance(activity).setProgressCallback(callback).copyOnMainThread("app_runtime/java/default",AppManifest.JAVA_DIR + "/default");
         }
     }
-/*
+
     @SuppressLint("SetTextI18n")
     public static void checkJava17(SplashActivity activity, AssetsUtils.ProgressCallback callback){
+        String versionString = AssetsUtils.readAssetsTxt(activity, "app_runtime/java/JRE17/version");
+        if (versionString == null) return;
         activity.runOnUiThread(() -> {
             activity.loadingText.setText(activity.getString(R.string.loading_hint_java_17));
         });
-        if (!new File(AppManifest.JAVA_DIR + "/JRE17").exists() || !new File(AppManifest.JAVA_DIR + "/JRE17/version").exists() || Integer.parseInt(Objects.requireNonNull(FileStringUtils.getStringFromFile(AppManifest.JAVA_DIR + "/JRE17/version"))) < Integer.parseInt(Objects.requireNonNull(AssetsUtils.readAssetsTxt(activity, "app_runtime/java/JRE17/version")))) {
+        if (!new File(AppManifest.JAVA_DIR + "/JRE17").exists() || !new File(AppManifest.JAVA_DIR + "/JRE17/version").exists() || Integer.parseInt(Objects.requireNonNull(FileStringUtils.getStringFromFile(AppManifest.JAVA_DIR + "/JRE17/version"))) < Integer.parseInt(versionString)) {
             FileUtils.deleteDirectory(AppManifest.JAVA_DIR + "/JRE17");
             AssetsUtils.getInstance(activity).setProgressCallback(callback).copyOnMainThread("app_runtime/java/JRE17",AppManifest.JAVA_DIR + "/JRE17");
         }
     }
-*/
+
     @SuppressLint("SetTextI18n")
     public static void installAdditionalFiles(SplashActivity activity, AssetsUtils.ProgressCallback callback){
         if(!new File(AppManifest.DEFAULT_GAME_DIR).exists()){

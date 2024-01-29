@@ -16,14 +16,14 @@
 
 * 第一个 [up](https://github.com/MrXiaoM/HMCL-PE-CN/commit/306f638105f7b04e26acb47ac00a5f3689002d3e) commit 包含了基本上全部的修改，后面的都是完善工作流和修改包名。
 * 在 `HMCLPE/src/main/assets/config.properties` 有一些前人留下的设置
-* 目前这个包只留了一个 `java 8`，毕竟有一个 java 就够了。java 在 `HMCLPE\src\main\assets\app_runtime\java\default` 里，需要的话自己找方法换。
+* java 在 `HMCLPE/src/main/assets/app_runtime/java` 里，`default` 是 java 8，`JRE17` 是 java 17，两个 java 打包太大了，根据自己需要删除一个。
 * 要解压的客户端目录在 `HMCLPE/src/main/assets/.minecraft`
 * 为了照顾到低配置的手机，请不要往客户端目录打包 `assets` 和 `libraries`，并对不需要的文件做好清理，以免造成过多的储存空间占用。那些都可以在启动时下载。
 * 图片资源在 `HMCLPE/src/main/res/drawable`
 * 配色方案在 `HMCLPE/src/main/res/values/colors.xml`
 * 默认键位在 `HMCLPE/src/main/assets/control/Default`，可以在软件编辑好之后，导出复制到这里
 * 游戏内右下角小字在 `Boat/src/main/res/layout/activity_boat.yml` 和 `PojavLauncher/src/main/res/layout/activity_pojav.yml`
-* 默认包名为 `com.tungsten.hmclpe.sweetrice`，已经可以与原版 HMCLPE 共存。如果你想更改包名，请到 `HMCLPE/build.gradle` 更改，并重构代码，将旧包名改为新包名 (包括代码的包名和代码里硬编码的旧包名)。
+* 默认包名为 `com.tungsten.hmclpe.sweetrice`，已经可以与原版 HMCLPE 共存。如果你想更改包名，请到 `HMCLPE/build.gradle` 更改，最好再重构代码，将旧包名改为新包名 (包括代码的包名和代码里硬编码的旧包名)。
 * 设置里的 `帮助`、`反馈`、`赞助`、`关于` 页面分别在 `HMCLPE/src/main/res/layout` 里面的 `ui_setting_help.xml`、`ui_setting_feedback.xml`、`ui_setting_donate.xml`、`ui_setting_about.xml`，逻辑代码在 `HMCLPE/src/main/java/com/tungsten/hmclpe/sweetrice/launcher/uis/universal/setting/right` 内
 * 几乎所有的文字都在 `PojavLauncher/src/main/res/values-xx/strings.xml`，`xx` 代表语言
 * 我在离线模式添加账户对话框那里加了“第一次启动游戏需要下载大约 320MB 的资源文件”，如果需要修改，`HMCLPE/src/main/res/layout/dialog_add_account.yml`

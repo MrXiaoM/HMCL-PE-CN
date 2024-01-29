@@ -291,13 +291,26 @@ public class JREUtils {
             case "opengles3":
                 renderLibrary = "libgl4es_114.so";
                 break;
+            case "opengles2_vgpu":
             case "opengles3_vgpu" :
                 renderLibrary = "libvgpu.so";
                 break;
             case "opengles3_virgl":
+                renderLibrary = "libOSMesa_virgl.so";
+                break;
             case "vulkan_zink":
                 renderLibrary = "libOSMesa_8.so";
                 break;
+            case "malihw_panfrost":
+                renderLibrary = "libOSMesa_pan.so";
+                break;
+            case "vulkan_freedreno":
+                renderLibrary = "libOSMesa_8.so";
+                break;
+            case "opengles3_desktopgl_angle_vulkan" :
+                renderLibrary = "libtinywrapper.so";
+                break;
+
             default:
                 Log.w("RENDER_LIBRARY", "No renderer selected, defaulting to opengles2");
                 renderLibrary = "libgl4es_114.so";
@@ -320,12 +333,24 @@ public class JREUtils {
             case "opengles3":
                 renderLibrary = "libgl4es_114.so";
                 break;
+            case "opengles2_vgpu":
             case "opengles3_vgpu" :
                 renderLibrary = "libvgpu.so";
                 break;
             case "opengles3_virgl":
+                renderLibrary = "libOSMesa_virgl.so";
+                break;
             case "vulkan_zink":
                 renderLibrary = "libOSMesa_8.so";
+                break;
+            case "malihw_panfrost":
+                renderLibrary = "libOSMesa_pan.so";
+                break;
+            case "vulkan_freedreno":
+                renderLibrary = "libOSMesa_8.so";
+                break;
+            case "opengles3_desktopgl_angle_vulkan" :
+                renderLibrary = "libtinywrapper.so";
                 break;
             default:
                 Log.w("RENDER_LIBRARY", "No renderer selected, defaulting to opengles2");

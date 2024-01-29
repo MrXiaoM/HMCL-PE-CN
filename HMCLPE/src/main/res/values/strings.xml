@@ -33,6 +33,10 @@
     <string name="game_setting_ui_pojav_renderer_virgl" translatable="false">VirGLRenderer (OpenGL 4.3)</string>
     <string name="game_setting_ui_pojav_renderer_vgpu" translatable="false">VGPU (OpenGL 2.1+)</string>
     <string name="game_setting_ui_pojav_renderer_vgpu_notes">\u3000Only supports 1.6 – 1.12.2,and some devices do not support it!!!</string>
+    <string name="game_setting_ui_pojav_renderer_vulkan_zink" translatable="false">Zink (Vulkan)</string>
+    <string name="game_setting_ui_pojav_renderer_angle" translatable="false">ANGLE</string>
+    <string name="game_setting_ui_pojav_renderer_panfrost" translatable="false">Panfrost (Mali)</string>
+    <string name="game_setting_ui_pojav_renderer_freedreno" translatable="false">Freedreno (Adreno)</string>
     <string name="components_deprecated">\u3000This component has been discarded</string>
     <string name="dialog_color_selector_arrow" translatable="false">→</string>
     <string name="download_setting_ui_source_bmclapi" translatable="false">BMCLAPI（bangbang93，https://bmclapi2.bangbang93.com/）</string>
