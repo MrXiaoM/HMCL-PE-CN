@@ -1147,4 +1147,5 @@
     <string name="ui_about_community_discord_join">欢迎加入 Discord 讨论区，加入后请遵守讨论区规定</string>
     <string name="ui_about_community_qq_community_join">欢迎加入 QQ 频道，加入后请遵守讨论区规定</string>
     <string name="ui_about_community_qq_join">欢迎加入 QQ 群，加入后请遵守讨论区规定</string>
+    <string name="account_offline_login_tips">没有国际版正版的选这个</string>
 </resources>

@@ -1015,5 +1015,6 @@
     <string name="ui_about_open_source">開源</string>
     <string name="feedback_ui_join_discord">加入非官方 Discord</string>
     <string name="feedback_ui_join_qq_channel">加入非官方 QQ 頻道</string>
+    <string name="account_offline_login_tips">沒有國際版正版的選這個</string>
 
 </resources>

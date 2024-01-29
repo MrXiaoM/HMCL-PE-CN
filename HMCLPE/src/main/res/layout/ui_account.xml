@@ -48,15 +48,32 @@
                 android:layout_height="20dp"
                 android:background="@drawable/ic_baseline_person_black"/>
 
-            <TextView
-                android:singleLine="true"
-                android:layout_gravity="center"
-                android:layout_marginStart="12dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/account_offline_login"
-                android:textSize="@dimen/text_size_middle"
-                android:textColor="@color/colorPureBlack"/>
+            <LinearLayout
+                    android:layout_marginStart="12dp"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:singleLine="true"
+                        android:textColor="@color/colorPureBlack"
+                        android:text="@string/account_offline_login"
+                        android:textSize="@dimen/text_size_middle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:singleLine="true"
+                        android:textColor="@color/colorRed"
+                        android:text="@string/account_offline_login_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_small"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
